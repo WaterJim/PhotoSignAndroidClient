@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.LessonAddStudentActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/addstu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/addstu_attention"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/addstu_account_wrapper_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/register_account">
+
+            <AutoCompleteTextView
+                android:id="@+id/register_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/addstu_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/login_register_btn"
+            android:text="@string/addstu_add"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+</LinearLayout>

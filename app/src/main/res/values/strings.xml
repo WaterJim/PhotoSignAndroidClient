@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">P签到</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--侧拉菜单栏-->
+    <string name="drawer_menu_userinfo">个人信息</string>
+    <string name="drawer_menu_setting">应用设置</string>
+    <string name="drawer_menu_about">关于应用</string>
+    <string name="drawer_menu_saved_manager">缓存管理</string>
+    <string name="drawer_menu_saved">未提交缓存</string>
+    <string name="drawer_menu_clean_saved">清理缓存</string>
+    <string name="drawer_menu_data_viewer">数据统计</string>
+    <string name="drawer_header_username_default">我是人民教师</string>
+    <string name="drawer_header_tag_default">这个人很懒，什么都没有留下</string>
+
+
+    <string name="empty_classes_list">还没有创建任务课程,快去创建一个吧</string>
+    <string name="empty_classes_list_unlogin">你还没进行登录操作,快去登录使用吧</string>
+
+
+    <string name="toast_network_null">没有链接到网络，请检查你的网络设置后重试...</string>
+    <string name="toast_network_wifi">当前使用的是WIFI网络</string>
+    <string name="toast_network_mobile">当前使用的移动网络，请注意你的流量使用...</string>
+    <string name="toast_err_server_connect">无法连接到服务器，请稍后重试...</string>
+
+
+    <!-- 页面title -->
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_offline">离线缓存</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_register">注册账号</string>
+    <string name="title_activity_classinfo">班级详情</string>
+    <string name="title_activity_createlesson">添加课程</string>
+    <string name="title_activity_addstu">添加学生</string>
+    <string name="title_activity_photo">拍照签到</string>
+    <string name="title_activity_class_data_record">班级数据</string>
+    <string name="title_activity_total_data_record">数据统计</string>
+    <string name="title_activity_about">关于应用</string>
+    <string name="title_activity_personinfo">基本信息</string>
+
+    <!-- Strings related to Settings -->
+    <string name="pref_cat_base">基本</string>
+    <string name="pref_cat_network">网络</string>
+    <string name="pref_cat_other">其他</string>
+
+    <string name="pref_base_autoupload_title">自动提交签到数据</string>
+    <string name="pref_base_autoupload_soff">关闭</string>
+    <string name="pref_base_autoupload_son">开启</string>
+
+    <string name="pref_base_remind_title">消息提醒</string>
+    <string name="pref_base_remind_soff">关闭</string>
+    <string name="pref_base_remind_son">开启</string>
+
+    <string name="pref_network_mobile_title">使用移动流量上传数据</string>
+    <string name="pref_network_mobile_son">开启</string>
+    <string name="pref_network_mobile_soff">关闭</string>
+
+    <!-- Index -->
+    <string name="index_network_error">无法连接到服务器，请稍后再试</string>
+
+
+    <!-- About -->
+    <string name="about_author">Author : WaterJim(陈锦辉)</string>
+    <string name="about_qq">QQ : 309613128</string>
+    <string name="about_email">Email : 309613128@qq.com</string>
+    <string name="about_server">Server : https://github.com/WaterJim/photosign</string>
+    <string name="about_client">Server : https://github.com/WaterJim/photosign</string>
+    <string name="about_homepage">http://waterjim.github.io/</string>
+    <string name="about_homepage_title">Home Page</string>
+    <string name="about_power">Power By : RDC_Team</string>
+    <string name="about_github_title">Github</string>
+    <string name="about_github">https://github.com/WaterJim</string>
+
+
+    <!-- PersonInfo -->
+    <string name="person_icon">头像</string>
+    <string name="person_nickname">昵称</string>
+    <string name="person_nickname_default">人民教师</string>
+    <string name="person_tag">个性签名</string>
+    <string name="person_tag_default">这个人很懒，什么也没留下来</string>
+    <string name="person_email">邮箱</string>
+    <string name="person_email_default">没有设置</string>
+    <string name="person_phone">联系电话</string>
+    <string name="person_phone_default">没有设置</string>
+    <string name="person_update_success">更新成功</string>
+    <string name="person_update_error">更新失败，请重试</string>
+    <string name="person_dialog_name_title">昵称</string>
+    <string name="person_dialog_name_content">请输入新的昵称</string>
+    <string name="person_dialog_tag_title">个性签名</string>
+    <string name="person_dialog_tag_content">请输入新的签名</string>
+    <string name="person_dialog_submit">确定</string>
+
+    <!-- Introduce -->
+    <string name="introduce_next_btn_text">立即体验</string>
+
+    <!-- Offline -->
+    <string name="offline_upload_all">全部上传</string>
+    <string name="offline_edit">编辑</string>
+    <string name="offline_select_all">全部选择</string>
+    <string name="offline_select_cancel">取消选择</string>
+    <string name="offline_delete">删除</string>
+    <string name="offline_cancel">取消</string>
+    <string name="offline_progress_dialog_title">数据上传</string>
+    <string name="offline_progress_dialog_content">正在进行数据校验与上传操作,请不要退出当前页面,请稍后...</string>
+    <string name="offline_progress_dialog_finish">数据上传完成</string>
+    <string name="offline_alert_dialog_content">请确定是否要上传数据?数据一旦上传便不能修改</string>
+    <string name="offline_alert_dialog_positive">确定</string>
+    <string name="offline_alert_dialog_negative">取消</string>
+
+    <!-- Login -->
+    <string name="login_account_wrapper_hint">用户名</string>
+    <string name="login_password_wrapper_hint">密码</string>
+    <string name="login_account_edit_hint">你的手机号/邮箱</string>
+    <string name="login_password_edit_hint">请输入密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">注册账号</string>
+
+    <!-- Register -->
+    <string name="register_account">输入您的账号</string>
+    <string name="register_password">输入您的密码</string>
+    <string name="register_email">输入您的邮箱</string>
+    <string name="register_phone">输入您的电话</string>
+    <string name="register_clean">清空数据</string>
+    <string name="register_register">注册</string>
+    <string name="register_dialog_title">注册账号</string>
+    <string name="register_dialog_content">注册成功,请返回到登录界面使用该账号进行登录</string>
+    <string name="register_dialog_positive">是的,现在就去登录</string>
+    <string name="register_dialog_negative">留在当前页面</string>
+
+    <!-- CreateLesson -->
+    <string name="createlesson_clean">清空数据</string>
+    <string name="createlesson_lesson_name">课程名称</string>
+    <string name="createlesson_lesson_name_default">例如：大一高等数学</string>
+    <string name="createlesson_lesson_week">课程周数</string>
+    <string name="createlesson_lesson_week_default">未设置</string>
+    <string name="createlesson_lesson_week_select">已选择</string>
+    <string name="createlesson_create">创建课程</string>
+    <string name="createlesson_create_success">创建课程成功......</string>
+    <string name="createlesson_create_error">创建课程失败,请重试......</string>
+    <string name="createlesson_dialog_week_title">课程周数</string>
+    <string name="createlesson_dialog_week_clear">清空</string>
+    <string name="createlesson_dialog_week_submit">确定</string>
+    <string name="createlesson_dialog_name_title">课程名称</string>
+    <string name="createlesson_dialog_name_content">请输入课程名称</string>
+
+    <!-- 自定义控件ProgressView -->
+    <string name="progressview_default_main_text">主存储: </string>
+    <string name="progressview_default_tail_text">可用: </string>
+    <string name="title_activity_log">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- ClassInfo -->
+    <string name="classinfo_check_data">数据统计</string>
+
+    <!-- AddStudent -->
+    <string name="addstu_attention">注意:为了简化操作，当前默认系统已经存在所有学生的学生信息(包括学号，姓名，照片等),
+    教师只需要输入学生学号将学生与课程匹配起来即可。</string>
+    <string name="addstu_add">添加</string>
+    <string name="addstu_success">添加成功......</string>
+    <string name="addstu_error">添加失败,不存在该学生,请重试......</string>
+
+    <!-- Photo -->
+    <string name="photo_dialog_title">注意</string>
+    <string name="photo_dialog_content">当前拍摄的照片数少于该课程的学生数,确定是否要退出当前页面</string>
+    <string name="photo_dialog_positive">是的,马上退出</string>
+    <string name="photo_dialog_negative">不，留在当前页面</string>
+
+    <!-- Index -->
+    <string name="index_dialog_new_version">新版本</string>
+    <string name="index_dialog_content">当前该应用的版本低于服务器的最新版本,是否需要进行更新操作以获得更好体验?</string>
+    <string name="index_dialog_download">是的,立即更新</string>
+    <string name="index_dialog_no">不,继续使用</string>
+
+
+    <!-- Main -->
+    <string name="main_logout">注销</string>
+    <string name="main_login">登录</string>
+    <string name="main_no_login">您还没有进行登录!请登录后再体验其他功能</string>
+    <string name="main_name_default">我是人民教师</string>
+    <string name="main_tag_default">这个人很懒，什么都没有留下</string>
+
+
+    <string name="list_empty">空空如也~</string>
+
+
+    <!-- Lesson Record -->
+    <string name="l_record_signed">已签到</string>
+    <string name="l_record_no_sign">未签到</string>
+
+
+</resources>

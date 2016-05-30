@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PersonInfoActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/person_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/person_icon"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_icon_iv"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/icon"
+                app:civ_border_color="#FFCCCCCC"
+                app:civ_border_width="3dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_icon_iv"
+                android:background="#CCCCCC" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_name_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:text="@string/person_nickname"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/person_name_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/person_name_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/person_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:layout_toLeftOf="@id/person_name_right"
+                android:ellipsize="end"
+                android:maxWidth="120dp"
+                android:singleLine="true"
+                android:text="@string/person_nickname_default"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_name_tv"
+                android:background="#CCCCCC" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/person_tag_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:text="@string/person_tag"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/person_tag_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/person_tag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/person_tag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:layout_toLeftOf="@id/person_tag_right"
+                android:ellipsize="end"
+                android:maxWidth="120dp"
+                android:singleLine="true"
+                android:text="@string/person_tag_default"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_tag_tv"
+                android:background="#CCCCCC" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:text="@string/person_email"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/person_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxWidth="120dp"
+                android:singleLine="true"
+                android:text="@string/person_email_default"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_email_tv"
+                android:background="#CCCCCC" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:text="@string/person_phone"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/person_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxWidth="120dp"
+                android:singleLine="true"
+                android:text="@string/person_phone_default"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_phone_tv"
+                android:background="#CCCCCC" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

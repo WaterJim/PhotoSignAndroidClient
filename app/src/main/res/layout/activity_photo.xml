@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PhotoActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/photo_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <SurfaceView
+                android:id="@+id/photo_view_sf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+
+            <View
+                android:id="@+id/photo_getview_v"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_pic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/photo_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textColor="#cccccc" />
+
+            <ImageView
+                android:id="@+id/photo_take_btn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_above="@id/photo_num_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:foregroundGravity="center"
+                android:src="@android:drawable/ic_menu_camera" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

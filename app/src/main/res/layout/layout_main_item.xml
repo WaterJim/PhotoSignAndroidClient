@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlist_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mainlist_item_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="3dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/mainlist_item_icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/icon_drawable"
+                android:text="选"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/mainlist_item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mainlist_item_icon"
+                android:text="大一高等数学"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:id="@+id/mainlist_item_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="46人"/>
+
+            <TextView
+                android:id="@+id/mainlist_item_week_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mainlist_item_name_tv"
+                android:layout_below="@id/mainlist_item_name_tv"
+                android:layout_marginTop="5dp"
+                android:text="每周一,二,三"/>
+
+            <TextView
+                android:id="@+id/mainlist_item_last_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mainlist_item_week_tv"
+                android:layout_below="@id/mainlist_item_week_tv"
+                android:layout_marginTop="5dp"
+                android:text="最后提交日期:2016/5/12"/>
+
+            <TextView
+                android:id="@+id/mainlist_item_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/mainlist_item_count_tv"
+                android:layout_below="@id/mainlist_item_count_tv"
+                android:layout_marginTop="5dp"
+                android:text="ID:001"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

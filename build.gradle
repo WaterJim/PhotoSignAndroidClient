@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        //数据库Realm
+        classpath "io.realm:realm-gradle-plugin:0.91.0"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+def retrofitVersion = "2.0.2"
+def okHttpVersion = '3.2.0'
+
+project.ext {
+    libRetrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    libRetrofitConverterGson = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    libRetrofitAdapterRxJava = "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+    libOkHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

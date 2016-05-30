@@ -1,0 +1,115 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.waterchen.android_photosignapp">
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 在SD卡中创建和删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SD卡中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.PhotoSignApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.activity.IndexActivity"
+            android:launchMode="standard"
+            android:theme="@style/IndexTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.IntroduceActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/IndexTheme" />
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.LessonCreateActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.activity.OfflineActivity"
+            android:label="@string/title_activity_offline"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.LessonInfoActivity"
+            android:label="@string/title_activity_classinfo"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".ui.activity.LessonAddStudentActivity"
+            android:label="@string/title_activity_addstu"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.LessonRecordActivity"
+            android:label="@string/title_activity_class_data_record"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.TotalRecordActivity"
+            android:label="@string/title_activity_total_data_record"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.PhotoActivity"
+            android:label="@string/title_activity_total_data_record"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.PersonInfoActivity"
+            android:label="@string/title_activity_personinfo"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+    </application>
+
+</manifest>

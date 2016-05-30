@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/pref_cat_base">
+
+        <SwitchPreference
+            android:layout="@layout/preference_item"
+            android:defaultValue="true"
+            android:summaryOff="@string/pref_base_autoupload_soff"
+            android:summaryOn="@string/pref_base_autoupload_son"
+            android:title="@string/pref_base_autoupload_title" />
+
+        <SwitchPreference
+            android:layout="@layout/preference_item"
+            android:defaultValue="true"
+            android:summaryOff="@string/pref_base_remind_soff"
+            android:summaryOn="@string/pref_base_remind_son"
+            android:title="@string/pref_base_remind_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/pref_cat_network">
+
+        <SwitchPreference
+            android:layout="@layout/preference_item"
+            android:defaultValue="true"
+            android:summaryOff="@string/pref_network_mobile_soff"
+            android:summaryOn="@string/pref_network_mobile_son"
+            android:title="@string/pref_network_mobile_title" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/pref_cat_other">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

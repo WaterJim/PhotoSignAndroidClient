@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_userinfo"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/drawer_menu_userinfo" />
+        <item
+            android:id="@+id/nav_dataview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/drawer_menu_data_viewer" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/drawer_menu_about" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/drawer_menu_setting" />
+    </group>
+
+    <item android:title="@string/drawer_menu_saved_manager">
+        <menu>
+            <item
+                android:id="@+id/nav_savedlist"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/drawer_menu_saved" />
+            <item
+                android:id="@+id/nav_cleansaved"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/drawer_menu_clean_saved" />
+        </menu>
+    </item>
+
+</menu>

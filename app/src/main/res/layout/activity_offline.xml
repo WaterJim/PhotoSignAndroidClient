@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.OfflineActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/offline_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/offline_base_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/offline_upload_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp"
+                android:text="@string/offline_upload_all"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#AAAAAA" />
+
+
+            <TextView
+                android:id="@+id/offline_edit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp"
+                android:text="@string/offline_edit"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/offline_edit_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/offline_selectall_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp"
+                android:text="@string/offline_select_all"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#AAAAAA" />
+
+
+            <TextView
+                android:id="@+id/offline_delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp"
+                android:text="@string/offline_delete"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#AAAAAA" />
+
+
+            <TextView
+                android:id="@+id/offline_cancel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp"
+                android:text="@string/offline_cancel"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <com.waterchen.android_photosignapp.weight.ProgressView
+            android:id="@+id/offline_pv"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_above="@id/offline_base_ll"
+            app:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/offline_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/offline_pv" />
+
+        <ImageView
+            android:id="@+id/offline_empty_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_load_empty" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

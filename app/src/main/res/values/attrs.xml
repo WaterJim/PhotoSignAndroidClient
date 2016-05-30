@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainText" format="string"/>
+    <attr name="tailText" format="string"/>
+    <attr name="textSize" format="dimension"/>
+    <attr name="textColor" format="color"/>
+    <attr name="progressColor" format="color"/>
+    <attr name="unprogressColor" format="color"/>
+
+    <declare-styleable name="ProgressView">
+        <attr name="mainText"/>
+        <attr name="tailText"/>
+        <attr name="textSize"/>
+        <attr name="textColor"/>
+        <attr name="progressColor"/>
+        <attr name="unprogressColor"/>
+    </declare-styleable>
+    
+</resources>
